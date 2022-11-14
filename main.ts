@@ -1,35 +1,17 @@
-input.onButtonPressed(Button.A, function () {
+input.onButtonPressed(Button.A, function on_button_pressed_a() {
     MuseOLED.clear()
     basic.pause(2000)
-    MuseOLED.writeStringNewLine(MuseIoT.HKTIAQ(
-    Key,
-    "628465168d6d7a0011bea7b7",
-    "62b93dcbfad13d5e68a9b175",
-    MuseIoT.deviceDescription.NULL,
-    MuseIoT.methodDirection.NULL
-    ))
+    MuseOLED.writeStringNewLine(MuseIoT.HKTIAQ(Key, "628465168d6d7a0011bea7b7", "62b93dcbfad13d5e68a9b175", MuseIoT.deviceDescription.NULL, MuseIoT.methodDirection.NULL))
 })
-input.onButtonPressed(Button.AB, function () {
+input.onButtonPressed(Button.AB, function on_button_pressed_ab() {
     MuseOLED.clear()
     basic.pause(2000)
-    MuseOLED.writeStringNewLine(MuseIoT.HKTIAQ(
-    Key,
-    "628465168d6d7a0011bea7b7",
-    "62b93dcbfad13d5e68a9b175",
-    MuseIoT.deviceDescription.NULL,
-    MuseIoT.methodDirection.switch_ON
-    ))
+    MuseOLED.writeStringNewLine(MuseIoT.HKTIAQ(Key, "628465168d6d7a0011bea7b7", "62b93dcbfad13d5e68a9b175", MuseIoT.deviceDescription.NULL, MuseIoT.methodDirection.switch_ON))
 })
-input.onButtonPressed(Button.B, function () {
+input.onButtonPressed(Button.B, function on_button_pressed_b() {
     MuseOLED.clear()
     basic.pause(2000)
-    MuseOLED.writeStringNewLine(MuseIoT.HKTIAQ(
-    Key,
-    "628465168d6d7a0011bea7b7",
-    "62b93dcbfad13d5e68a9b175",
-    MuseIoT.deviceDescription.NULL,
-    MuseIoT.methodDirection.switch_OFF
-    ))
+    MuseOLED.writeStringNewLine(MuseIoT.HKTIAQ(Key, "628465168d6d7a0011bea7b7", "62b93dcbfad13d5e68a9b175", MuseIoT.deviceDescription.NULL, MuseIoT.methodDirection.switch_OFF))
 })
 let Key = ""
 basic.showNumber(0)
